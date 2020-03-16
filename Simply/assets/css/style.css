@@ -1,0 +1,513 @@
+/* ----------------------------------------------------------------------------------------
+* Author        : Nababur
+* Template Name : Simply - Personal Portfolio Template
+* Author Url    : https://nababur.com/
+* File          : Simply custom CSS file
+* Version       : 1.0.0
+* ---------------------------------------------------------------------------------------- */
+/* INDEX
+----------------------------------------------------------------------------------------
+0.  General css
+01. Header Navbar Css
+02. Resume Section css
+03. skills Section css
+04. Testimonial Section css
+05. Portfolio Section css
+06. Contact Section css
+07. Footer Section css
+
+
+/* -------------------------------------------------------
+                    Preloader CSS
+-------------------------------------------------------- */
+.preloader {background: #fff none repeat scroll 0 0;bottom: 0;left: 0;position: fixed;right: 0;top: 0;
+z-index: 99999;}
+.spinner {width: 70px;margin: 100px auto;top:33%;left: 0;right: 0;position: fixed;}
+.spinner > div {width: 18px;height: 18px;background-color: #333;border-radius: 100%;display: inline-block;-webkit-animation: sk-bouncedelay 1.4s infinite ease-in-out both;animation: sk-bouncedelay 1.4s infinite ease-in-out both;}
+.spinner .bounce1 {-webkit-animation-delay: -0.32s;animation-delay: -0.32s;}
+.spinner .bounce2 {-webkit-animation-delay: -0.16s;animation-delay: -0.16s;}
+@-webkit-keyframes sk-bouncedelay {
+  0%, 80%, 100% { -webkit-transform: scale(0) }
+  40% { -webkit-transform: scale(1.0) }
+}
+@keyframes sk-bouncedelay {
+  0%, 80%, 100% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 40% { 
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+  }
+}
+
+
+
+/*----------------------------------------*/
+/*  0. General css
+/*----------------------------------------*/
+html, body {
+    height: 100%;
+}
+body{font-size: 15px;font-family: 'Lato', sans-serif;position: relative;background-color: #fff}
+
+h1,h2,h3,h4,h5,h6{margin-top:0;color: #3b3b3b}
+.text-center{text-align:center}
+p{letter-spacing: 0.05em;color: #999}
+.no-padding{padding-left: 0;padding-right: 0}
+.spaces {padding-top: 60px; padding-bottom: 60px;}
+
+
+/*----------------------------------------*/
+/*  01.  Header Navbar css
+/*----------------------------------------*/
+.navbar button{background-color: #fc6f5c ; /* Green */border: none;color: white;
+padding: 11px 30px;text-align: center;text-decoration: none;display: inline-block;font-size: 16px;
+margin: 4px 2px;cursor: pointer;   outline: none !important;}
+header#to-nav nav {min-height: 70px;box-shadow:0 2px 10px rgba(0, 0, 0, 0.1);background-color: rgba(255, 255, 255, 0.97);}
+nav div.top-nav-menu ul.mr-auto {margin: 0px auto;}
+nav div.top-nav-menu ul.mr-auto li{}
+nav div.top-nav-menu ul.mr-auto li a {color: #3b3b3b;font-weight: 600;display: block;
+  text-decoration: none;padding: 10px 20px 10px 20px !important;-webkit-transition: all .55s ease;-o-transition: all .55s ease;transition: all .55s ease;position: relative;
+}
+nav div.top-nav-menu ul.mr-auto li a:after {content: '';display: block;margin: auto;
+height: 2px;width: 0px;background: transparent;transition: width .55s ease, background-color .55s ease;position: absolute;left: 0;right: 0
+}
+nav div.top-nav-menu ul.mr-auto li a:hover:after { width: 60%; background: #fc6f5c  ;
+}
+nav div.top-nav-menu ul.mr-auto li a.active::after {width: 60%;background: #fc6f5c  ;
+}
+/*----------------------------------------*/
+/*  02.  About Section css
+/*----------------------------------------*/
+#about-section {margin-top: 70px;}
+.author-bio h1 {color: #3b3b3b;text-transform: uppercase;font-size: 28px;font-weight: 700;letter-spacing: 1px;margin-bottom: 0px;display: block;}
+.author-bio span {color: #787878;font-size: 16px;font-weight: 500;margin-bottom: 30px;
+  display: block;}
+.author-bio p{  color: #787878;}
+.author-photo {background-image: url(../images/portrait-female.jpg) ;background-position: 45% 32%;background-size: cover;display: block;min-height: 300px;position: static;
+    width: 100%;height: 100%;left: 0;top: 0;}
+.author-info {background-color: #eee;padding: 30px;padding-left: 60px;  padding-top: 80px;}
+.contact-info ul{margin: 0;padding: 0;list-style: none}
+.contact-info ul li {list-style: none;color: #fff;font-weight: normal;font-size: 14px;
+  line-height: 22px;}
+.contact-info ul li span {color: #fff;font-weight: 600;padding-right: 5px;
+  font-size: 15px;}
+.social-info {overflow: hidden;display: block;margin-top: 15px;}
+.social-info ul{margin:0;padding: 0;list-style: none}
+.social-info ul li{float: left;list-style: none}
+.social-info ul li a {display: block;text-decoration: none;margin: 5px 15px;
+display: inline-block;margin-left: 0;padding: 5px;}
+.social-info ul li a i{color: #fc6f5c}
+.social-info ul li a i:hover{color: #555;-webkit-transition: all .5s ease;
+  -o-transition: all .5s ease;transition: all .5s ease;}
+.contact-info-area {background-color: #3b3b3b;padding-bottom: 55px;padding-left: 60px;
+  padding-top: 70px;}
+.cv-download-btn a span{margin-left:10px}
+.cv-download-btn {display: block;overflow: hidden;padding-top: 15px;padding-bottom: 20px;
+}
+.cv-download-btn a {text-decoration: none;color: #fff;display: inline-block;}
+.btn-slide {position: relative;color: #fff;text-decoration: none;padding: 10px 30px;
+  font-size: 18px;background: -webkit-linear-gradient(right, #3b3b3b 50%, #fc6f5c 50%);
+background: -moz-linear-gradient(right, #3b3b3b 50%, #fc6f5c 50%);
+background: -o-linear-gradient(right, #3b3b3b 50%, #fc6f5c 50%);
+background: linear-gradient(to left, #3b3b3b 50%, #fc6f5c 50%);
+background-size: 200% 100%;background-position: left bottom;transition: all 1s ease;
+}
+.btn-slide:hover {background-position: right bottom;}
+.btn-slide-right {position: relative;color: #fff;text-decoration: none;
+  padding: 10px 30px;font-size: 18px;margin-left: 20px; 
+background: -webkit-linear-gradient(right, #fc6f5c 50%, #3b3b3b 50%);
+background: -moz-linear-gradient(right, #fc6f5c 50%, #3b3b3b 50%);
+background: -o-linear-gradient(right, #fc6f5c 50%, #3b3b3b 50%);
+background: linear-gradient(to left, #fc6f5c 50%, #3b3b3b 50%); 
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 1s ease;
+}
+
+.btn-slide-right:hover {background-position: right bottom;}
+
+/*----------------------------------------*/
+/*  02. My Resume Section Css
+/*----------------------------------------*/
+.resume-title {margin-bottom: 60px;position: relative;}
+.resume-title h1 {font-size: 28px;font-weight: 700;display: inline-block;letter-spacing: 1px;
+}
+.resume-title p { font-weight: 400;
+}
+.education-section{position: relative;}
+.education-section h2.education-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.education_row {
+  border-left: 10px solid #ddd;
+  padding-left: 35px;-webkit-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+  position: relative;
+  
+}
+.edu-icon {
+  position: absolute;
+  left: -28px;
+  width: 45px;
+  height: 45px;
+  background: #3b3b3b;
+  border-radius: 100px;
+}
+.edu-icon span {
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  color: #fff;
+  font-size: 18px;
+  line-height: 44px;
+}
+.education_row h2 {
+  font-size: 1.4em;
+  font-weight: 600;-webkit-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+.border-edu {
+  padding-bottom: 60px;
+}
+.border-edu:hover h2 {
+  font-size: 2em;font-weight: 700;
+}
+div.education_row:hover .border-edu span {
+  color: #fc6f5c;
+}
+.border-edu h3{  font-size: 15px;text-transform: uppercase;
+-webkit-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;font-weight: 600;}
+.border-edu h3 span {
+  font-style: italic;
+  text-transform: none;font-weight: 500;
+}
+.border-edu p{margin:0;}
+
+.employment-section {
+  position: relative;
+  margin-left: 20px;
+}
+.employment-section h2.employment-subtitle {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 40px;
+}
+.employment_row {
+  border-left: 10px solid #ddd;
+  padding-left: 35px;-webkit-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+  position: relative;
+  
+}
+.em-icon {
+  position: absolute;
+  left: -28px;
+  width: 45px;
+  height: 45px;
+  background: #3b3b3b;
+  border-radius: 100px;
+}
+.em-icon span {
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  color: #fff;
+  font-size: 18px;
+  line-height: 44px;
+}
+.employment_row h2 {
+  font-size: 1.4em;
+  font-weight: 600;-webkit-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;
+}
+.em-border {
+  padding-bottom: 60px;
+}
+.em-border:hover h2 {
+  font-size: 2em;font-weight: 700;
+}
+div.employment_row:hover .em-border span {
+  color: #fc6f5c;
+}
+.em-border h3{  font-size: 15px;text-transform: uppercase;
+-webkit-transition: all .55s ease;
+  -o-transition: all .55s ease;
+  transition: all .55s ease;font-weight: 600;}
+.em-border h3 span {
+  font-style: italic;
+  text-transform: none;font-weight: 500;;
+}
+.em-border p{margin:0;}
+
+
+
+
+
+
+
+
+/*----------------------------------------*/
+/*  03. My Skills Section Css
+/*----------------------------------------*/
+#skill-area {
+  background-color: #eee;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.skills h3 {
+  font-weight: 500;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 20px;
+}
+.chart {
+  position: relative;
+  display: inline-block;
+  margin: 20px 10px;
+  color: #999;
+  font-size: 14px;
+  text-align: center;
+  margin: 0px auto;
+  text-align: center;
+  display: block;
+}
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------*/
+/*  04. My Testimonial Section Css
+/*----------------------------------------*/
+div.testimonial-area .thumb-img {
+  display: block;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  overflow: hidden;
+  margin: 0px auto;
+  margin-bottom: 35px;
+}
+.testimonial-area {
+  padding-bottom: 60px;
+}
+.testi-title {
+  margin-bottom: 100px;
+}
+.testi-title h1 {
+    font-size: 28px;
+    font-weight: 700;
+    /* margin-bottom: 40px; */
+    display: inline-block;
+    letter-spacing: 1px;
+}
+.thumb-img img {
+  display: block;
+  border-radius: 50%;
+}
+.thumb-img{}
+.thumb-img img{}
+.testimonial-text {
+  margin-bottom: 35px;
+}
+.testimonial-text p {
+  font-style: italic;
+  font-size: 17px;
+}
+.testimonial-author{}
+.testimonial-author h5 {
+  font-weight: bold;
+}
+.testimonial-author span {font-size: 14px;font-weight: 500;color: #999}
+ol.nav-controllers {position: absolute;bottom: -30%;}
+ol.nav-controllers li {background-color: #f8a296;width: 10px;height: 10px;border-radius: 50%;cursor: pointer;}
+.carousel-indicators .active {background-color: #fc6f5c;}
+
+
+
+
+/*----------------------------------------*/
+/*  05. Portfolio css
+/*----------------------------------------*/
+#portfolio {background-color: #eee;border-top: 1px solid #ddd;border-bottom: 1px solid #ddd;}
+.portfolio-title {margin-bottom: 60px;position: relative;}
+.portfolio-title h1 {font-size: 28px;font-weight: 700;display: inline-block;letter-spacing: 1px;}
+.portfolio-title p {font-weight: 400}
+.portfolio-img-hover {position: relative;overflow: hidden; background: #111;margin-bottom: 30px;}
+.portfolio-img-hover img {width: 100%;height: auto;}
+.portfolio-img-hover img {-webkit-transition: all .4s ease-in-out;transition: all .4s ease-in-out;}
+.portfolio-img-hover:hover img {-webkit-transform: scale(1.2);transform: scale(1.2);opacity: 0.1}
+.portfolio-img-hover .caption {position: absolute;bottom: calc(50% - 30px);left: 50%;transform: translateX(-50%) translateY(50%);z-index: 10;text-align: center;width: 100% ;}
+.portfolio-img-hover:before, 
+.portfolio-img-hover:after {position: absolute;content: '';height: 0px;width: 0px;background-color: transparent;-webkit-transition: all .25s ease-in-out;transition: all .3s ease-in-out;opacity: 0;}
+.portfolio-img-hover:before {border-left: 1px solid #fc6f5c;border-top: 1px solid #fc6f5c;top: 20px;left: 20px;z-index: 1;}
+.portfolio-img-hover:after {border-right: 1px solid #fc6f5c;border-bottom: 1px solid #fc6f5c;bottom: 20px;right: 20px;}
+.portfolio-img-hover:hover:before, 
+.portfolio-img-hover:hover:after {height: 40px;width: 40px;opacity: 1;}
+.portfolio-img-hover .caption h3 {color: #fff;margin-bottom: 8px;-webkit-transform: translateY(20px);transform: translateY(20px);-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out;opacity: 0;}
+.portfolio-img-hover .caption p {-webkit-transform: translateY(50px);transform: translateY(50px);color: rgba(255,255,255,0.7);opacity: 0;-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+.portfolio-img-hover:hover .caption h3, 
+.portfolio-img-hover:hover .caption p {opacity: 1;-webkit-transform: translateY(0px);transform: translateY(0px);}
+.portfolio-img-hover .link-wrap {position: absolute;top: calc(45% - 25px);right: 50%;transform: translateX(50%) translateY(-50%);z-index: 10;}
+.portfolio-img-hover .link-wrap a {display: inline-block;height: 40px;width: 40px;line-height: 40px;background-color: #fc6f5c;text-align: center;color: #fff;font-size: 14px;opacity: 0;border-radius: 50%;-webkit-transition: all .5s ease-in-out;transition: all .5s ease-in-out;}
+.portfolio-img-hover .link-wrap a:first-child {-webkit-transform: translateY(-30px);transform: translateY(-30px);margin-right: 5px;}
+.portfolio-img-hover .link-wrap a:last-child {-webkit-transform: translateY(-60px);transform: translateY(-60px);}
+.portfolio-img-hover:hover .link-wrap a {opacity: 1;-webkit-transform: translateY(0px);transform: translateY(0px);}
+.portfolio-img-hover .link-wrap a:hover {background-color:#ce4c3b}
+
+
+
+
+/*----------------------------------------*/
+/*  05. Portfolio css
+/*----------------------------------------*/
+.contact-title {margin-bottom: 60px;position: relative;}
+.contact-title h1 {font-size: 28px;font-weight: 700;display: inline-block;letter-spacing: 1px;}
+.contact-title p {font-weight: 400;}
+.more-load{display: none;clear: both;overflow: hidden;}
+#loard-itmes {
+  text-align: center;
+  display: block;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+#loard-itmes button.btn-primary {
+  color: #fff;
+  background-color: #fc6f5c;
+  border-color: #fc6f5c;
+  padding: 10px 20px;
+}
+#loard-itmes button.btn-primary:hover{
+background-color: #ddd;color: #111;transition: all 0.3s;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;border-color: #fc6f5c;
+}
+.clear{clear: both;}
+.btn:focus,.btn:active {
+   outline: none !important;
+   box-shadow: none;
+}
+
+
+/*----------------------------------------*/
+/*  06. Contact area css
+/*----------------------------------------*/
+
+section.contact_section {background-color: #fff;padding-bottom: 80px;padding-top: 80px;}
+.contact-title{margin-bottom: 100px;
+position: relative;}
+.form-control {border-radius: 0px;box-shadow: 0 0px 0px rgba(0, 0, 0, 0.075) inset;}
+.contact-title h2 { color: #454345;display: inline-block;font-size: 35px;font-weight: 700;
+  letter-spacing: 0.1em;padding-bottom: 2px;position: relative;text-transform: uppercase;}
+.contact-underline {position: relative;}
+.row.contact_padding {margin-bottom: 80px;}
+.contact_info {position: relative;}
+.info_icon {display: block;float: left;margin-right: 30px;overflow: hidden;width: 40px;}
+.info_icon  {background-color: #111;display: inline-block;border-radius: 4px;width: 40px;height: 40px;
+margin-left: 7px;
+/* Rotate div */
+    -ms-transform: rotate(-45deg); /* IE 9 */
+    -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+    transform: rotate(-45deg)
+}
+.info_icon span i {color: #ccc;display: block;font-size: 18px;margin: 0 auto;padding-left: 8px;
+  padding-top: 11px;text-align: center;
+/* Rotate div */
+    -ms-transform: rotate(45deg); /* IE 9 */
+    -webkit-transform: rotate(45deg); /* Chrome, Safari, Opera */
+    transform: rotate(45deg);}
+.info_details > p {color: #666;margin-bottom: 3px;}
+.info_details > h4 {color: #666;}
+.info_details {display: block;overflow: hidden;}
+.subject_input input.form-control ,.name_input input.form-control, .email_input input.form-control {
+background-color: #e6e6e6;border: 1px solid #eee;border-radius: 0;height: 40px;
+padding: 8px;width: 100%;color: #666}
+.message_input textarea.form-control {background-color: #e6e6e6;border: 1px solid #eee;border-radius: 0;
+padding: 8px;width: 100%;}
+.submit_input button.btn {background-color: #fc6f5c;border: medium none;border-radius: 0;color: #fff;
+  padding: 14px 30px 13px;}
+.submit_input button:hover.btn{background-color: #ddd;color: #111;transition: all 0.3s;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;}
+.subject_input input.form-control:focus ,.name_input input.form-control:focus, .email_input input.form-control:focus, .message_input textarea.form-control:focus{box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(102, 175, 233, 0.6); border-color: #fc6f5c}
+button span.send-btn i {margin-right: 10px;}
+.row.input_padding {margin-bottom: 25px;}
+.name_input label, .email_input label, .subject_input label, .message_input label{
+  margin: 0;font-weight: bold;}
+
+/***** Scroll Top Up css  *****/
+#to-top{position:relative;display:none}
+#to-top i {background-color: #fc6f5c;border-radius: 3px 0 0 3px;bottom: 50px;color: #fff;cursor: pointer;
+display: block;font-size: 25px;height: 40px;padding-top: 5px;position: fixed;right: 0;text-align: center;width: 50px;z-index: 999;}
+#to-top i:hover{  background-color: #ccc;color:#111;transition: all 0.5s;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;}
+.thanks_message h1{color: #498bfc;margin: 60px auto;}
+
+.success {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #468847;
+  background-color: #dff0d8;
+  border: 1px solid #d6e9c6;
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+.error {
+  padding: 1em;
+  margin-bottom: 0.75rem;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);
+  color: #b94a48;
+  background-color: #f2dede;
+  border: 1px solid rgba(185, 74, 72, 0.3);
+  -webkit-border-radius: 4px;
+     -moz-border-radius: 4px;
+          border-radius: 4px;
+}
+
+
+
+
+/*----------------------------------------*/
+/*  07. Footer area css
+/*----------------------------------------*/
+
+footer.footer_area {background-color: #3b3b3b;padding-bottom: 60px;padding-top: 60px;}
+.footer_logo > h2 {color: #efefef;margin-bottom: 15px;}
+.social_icons > ul {margin: 0;padding: 0;list-style: none;}
+.social_icons {margin-bottom: 8px;}
+.social_icons > ul {list-style: outside none none;margin: 0;padding: 0;}
+.social_icons ul li {display: inline-block;text-align: center;line-height: 28px;
+  margin-right: 5px;}
+.social_icons ul li a {color: #fc6f5c;display: block;padding: 6px 10px;  border: 2px solid #fc6f5c;  border-radius: 25px;  width: 42px;height: 42px;}
+.social_icons ul li a:hover{ border: 2px solid #555;color: #555;transition: all 0.5s;-webkit-transition: all 0.5s;-moz-transition: all 0.5s;}
+.copyright_text > p {color: #aaa;margin-top: 15px;}
+

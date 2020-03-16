@@ -1,0 +1,287 @@
+
+/* ----------------------------------------------------------------------------------------
+* Author        : Nababur
+* Template Name : Simply - Personal Portfolio Template
+* Author Url    : https://nababur.com/
+* File          : Simply custom Responsive file
+* Version       : 1.0.0
+* ---------------------------------------------------------------------------------------- */
+
+/* Medium Layout: 1280px. */
+
+@media only screen and (min-width: 992px) and (max-width: 1280px) {
+.btn-slide {
+    padding: 10px 15px;
+}
+.btn-slide-right {
+    padding: 10px 15px;
+}
+.author-photo {
+    background-position: 35% 31%;
+
+}
+
+
+
+
+
+}
+
+
+/* Tablet Layout: 768px. */
+
+@media only screen and (min-width: 767px) and (max-width: 991px) {
+
+header#to-nav nav {
+	text-align: center;
+	margin: 0px auto;
+	display: block;
+}
+nav div.top-nav-menu {
+	padding-top: 10px;
+}
+nav div.top-nav-menu ul.mr-auto li a.active::after {
+	background: transparent;
+	
+}
+nav div.top-nav-menu ul.mr-auto li a:hover:after {
+  background: transparent;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color:#fc6f5c;
+}
+.author-photo {
+    background-position: 41% 32%;
+
+}
+.author-info {
+    padding: 30px;
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
+.author-bio span {
+    margin-bottom: 15px;
+}
+.cv-download-btn a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    margin-bottom: 15px;    text-align: center;
+}
+
+.btn-slide-right {
+    margin-left: 0;
+}
+.contact-info-area {
+    background-color: #3b3b3b;
+    padding-bottom: 55px;
+    padding-left: 30px;
+    padding-top: 60px;
+}
+
+
+
+
+
+
+
+}
+
+
+
+
+/* Mobile Layout: 320px. */
+
+@media only screen and (max-width: 767px) {
+.no-padding {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+header#to-nav nav {
+	text-align: center;
+	margin: 0px auto;
+	display: block;
+}
+nav div.top-nav-menu {
+	padding-top: 10px;
+}
+nav div.top-nav-menu ul.mr-auto li a.active::after {
+	background: transparent;
+	
+}
+nav div.top-nav-menu ul.mr-auto li a:hover:after {
+  background: transparent;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color:#fc6f5c;
+}
+.author-info {
+	padding: 30px;
+	padding-left: 25px;
+	padding-top: 50px;
+}
+.cv-download-btn a {
+	text-decoration: none;
+	color: #fff;
+	float: none;
+	text-align: center;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.btn-slide {
+	padding: 10px 10px;
+}
+.btn-slide-right {
+	padding: 10px 10px;
+	margin-left: 0;
+}
+.contact-info-area {
+	background-color: #3b3b3b;
+	padding-bottom: 35px;
+	padding-left: 25px;
+	padding-top: 35px;
+}
+.education-section {
+	margin-left: 20px;
+}
+.employment-section {
+	position: relative;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+.social_icons ul li {
+	line-height: 21px;
+}
+.social_icons ul li a {
+	padding: 6px 7px;
+	width: 35px;
+	height: 35px;
+}
+.social-info ul li a {
+    margin: 5px 2px;
+}
+.social-info ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.author-bio span {
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+/* Wide Mobile Layout: 480px. */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+.no-padding {
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+header#to-nav nav {
+	text-align: center;
+	margin: 0px auto;
+	display: block;
+}
+nav div.top-nav-menu {
+	padding-top: 10px;
+}
+nav div.top-nav-menu ul.mr-auto li a.active::after {
+	background: transparent;
+	
+}
+nav div.top-nav-menu ul.mr-auto li a:hover:after {
+  background: transparent;
+}
+
+.navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show > .nav-link {
+	color:#fc6f5c;
+}
+.author-info {
+	padding: 30px;
+	padding-left: 25px;
+	padding-top: 50px;
+}
+.cv-download-btn a {
+	text-decoration: none;
+	color: #fff;
+	float: none;
+	text-align: center;
+	display: block;
+	margin-bottom: 15px;
+}
+
+.btn-slide {
+	padding: 10px 10px;
+}
+.btn-slide-right {
+	padding: 10px 10px;
+	margin-left: 0;
+}
+.contact-info-area {
+	background-color: #3b3b3b;
+	padding-bottom: 35px;
+	padding-left: 25px;
+	padding-top: 35px;
+}
+.education-section {
+	margin-left: 20px;
+}
+.employment-section {
+	position: relative;
+	margin-left: 20px;
+	margin-top: 40px;
+}
+.social_icons ul li {
+	line-height: 21px;
+}
+.social_icons ul li a {
+	padding: 6px 7px;
+	width: 35px;
+	height: 35px;
+}
+.social-info ul li a {
+    margin: 5px 6px;
+}
+.social-info ul li {
+    list-style: none;
+    display: inline-block;
+    text-align: center;
+}
+.author-bio span {
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+}
+
+
+
